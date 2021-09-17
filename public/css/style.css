@@ -1,0 +1,242 @@
+/*
+Tamaños Tipográficos
+    Cuerpos de texto: 12px
+    Titulares (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+    <i class="fas fa-search"></i> search icon
+    <i class="fas fa-hand-holding-usd"></i> money hand icon 
+    <i class="far fa-id-card"></i> id card icon
+    <i class="fas fa-sign-in-alt"></i> sign in icon
+    <i class="fas fa-shopping-basket"></i> shopping basket icon
+    Iconos 2 em
+    margin--bottom 2px
+*/
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --blanco: white;
+  --negro: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--amarillo);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+i {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.logo-container {
+  width: 50%;
+}
+
+.search-bar {
+  display: inline-block;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blanco);
+  height: 3em;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+input {
+  width: 90%;
+  font-size: 1em;
+  outline: none;
+  border: none;
+}
+
+.text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-bar {
+  width: 100%;
+}
+
+.nav-bar {
+  height: 1px;
+  overflow: hidden;
+}
+
+.section-banner img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+main header {
+  width: 95%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-last-visit,
+.section-offers {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* PRODUCTOS */
+.article-product-container {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-product-info:hover + .description {
+  overflow: visible;
+  height: 10px;
+  background-color: black;
+}
+
+.article-product-container:hover {
+  background-color: black;
+}
+
+div.div-product-container {
+  flex: none;
+  border-top: 1px solid var(--gris-claro);
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+div.div-product-image {
+  width: 100%;
+  flex-grow: 1;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+.div-product-info {
+  background-color: var(--blanco);
+  width: 100%;
+  flex-grow: 0.3;
+}
+
+div.div-product-info p:nth-child(2) {
+  color: var(--negro);
+  font-size: 18px;
+}
+
+div.div-product-info p:nth-child(2):hover {
+  color: var(--negro);
+  font-size: 18px;
+}
+
+div.div-product-info p:nth-child(3) {
+  color: var(--verde);
+  font-size: 16px;
+}
+
+div.div-product-info p:nth-child(4) {
+  overflow: hidden;
+  height: 0px;
+}
+
+article.article-product-container:hover p:nth-child(4) {
+  overflow: visible;
+  height: 20px;
+}
+
+/*-----------*/
+
+@media (min-width: 769px) {
+  .header-container {
+    display: flex;
+    flex-wrap: unset;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+  }
+
+  .nav-bar {
+    height: 2rem;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  a {
+    font-size: 12px;
+  }
+  li div i {
+    font-size: 18px;
+  }
+  .links-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menu-icon {
+    padding: 5px;
+  }
+
+  .article-product-container {
+    width: calc((100% - 10px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-product-container {
+    width: calc((100% - 20px) / 3);
+  }
+}
