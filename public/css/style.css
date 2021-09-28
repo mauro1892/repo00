@@ -240,3 +240,24 @@ article.article-product-container:hover p:nth-child(4) {
     width: calc((100% - 20px) / 3);
   }
 }
+
+.footer-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.footer-i-p {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-footer {
+  display: block;
+}
+.fa-credit-card:hover,
+.fa-gift:hover,
+.fa-user-shield:hover {
+  color: blue;
+}
