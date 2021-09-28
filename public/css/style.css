@@ -125,11 +125,6 @@ h2 {
 .div-product-info:hover + .description {
   overflow: visible;
   height: 10px;
-  background-color: black;
-}
-
-.article-product-container:hover {
-  background-color: black;
 }
 
 div.div-product-container {
